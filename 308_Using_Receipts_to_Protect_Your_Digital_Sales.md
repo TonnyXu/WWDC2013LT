@@ -49,3 +49,17 @@
 ## Unclear
 
 1. Use something special in your validation?
+
+----
+
+## Funny things
+
+1. Apple provided a solution to use OpenSSL, but if you compile your code, full of "Deprecated function" warning
+    To suppress the warning, best solution:
+```
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
+//... your code
+#pragma clang diagnostic pop
+```
