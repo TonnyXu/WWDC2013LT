@@ -49,6 +49,8 @@
 ## Unclear
 
 1. Use something special in your validation?
+    * Validate the CA fingerprint
+    * ?
 
 ----
 
@@ -62,4 +64,11 @@
 
 //... your code
 #pragma clang diagnostic pop
+```
+2. There is a BETTER doc for validation, [in release notes!](https://developer.apple.com/library/mac/releasenotes/General/ValidateAppStoreReceipt/)
+3. For security reason, advanced programming skill is recommended to use, but sorry, no examples are provided. The following code is not recommended, but how many is using?
+
+```
+if (validateFailed)
+    exit(173);
 ```
